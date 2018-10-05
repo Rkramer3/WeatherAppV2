@@ -40,8 +40,8 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-offset-4 is-4">
-                    <% //for (weather of weather_data) { %>
-                    <div class="box">
+                    <% for (weather of weather_data) { %>
+                    <div onclick="location.href='/weather/:weather.city'; "class="box info" >
                           
                         <article class="media">
                             
@@ -62,7 +62,7 @@
                     </div>
                     </article>
                 </div>
-                <%// } %>
+                <% } %>
             </div>
         </div>
     </section>
